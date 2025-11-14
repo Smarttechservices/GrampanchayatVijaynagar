@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/GramLogo.png" type="image/x-icon">
+    <title>ग्रामपंचायत विजयनगर </title>
+   
+  <!--Bootstrap -->
+   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">  
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Google Font -->
+     <meta name="google" content="notranslate">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Icons (FontAwesome or similar) -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lightbox.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f0f0f0;
+            /* padding: 30px; */
+        }
+
+        .population-card {
+            width: 400px;
+            background-color: #fff;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+            .population-card h2 {
+                font-size: 18px;
+                color: #003366;
+                margin-bottom: 10px;
+                position: relative;
+                display: inline-block;
+                border-bottom: 3px solid orange;
+            }
+
+        .population-table {
+            background: white;
+            /* border: black; */
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            width: 150px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;  /* hover केल्यावर pointer दिसेल */
+        }
+
+        /* hover झाल्यावर bubble effect */
+        .population-table:hover {
+            transform: scale(1.1);  /* थोडा मोठा होईल */
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2); /* shadow वाढेल */
+        }
+
+        .pop-col {
+            flex: 1;
+        }
+
+            .pop-col:not(:last-child) {
+                border-right: 1px solid #ddd;
+            }
+
+            .pop-col img {
+                width: 36px;
+                height: 36px;
+                margin-bottom: 6px;
+            }
+
+        .pop-label {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #222;
+        }
+
+        .pop-value {
+            font-size: 20px; /* Increase size */
+            font-weight: bold; /* Make bold */
+            color: #000; /* Darker color for better contrast (optional) */
+            margin-top: 5px;
+        }
+        .goog-te-combo {
+      font-size: 16px !important;
+      font-weight: bold !important;
+      padding: 6px;
+    }
+
+
+    .notice-strip {
+  background-color: #e1fbff;
+  /* background-color: #fff8e1; */
+  /*border-top: 2px solid #ffc107;
+  border-bottom: 2px solid #ffc107;*/
+  border-top: 2px solid #0ae7e0;
+  border-bottom: 2px solid #0ae7e0;
+  color: #333;
+  padding: 6px 0;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.notice-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.notice-content span {
+  color: #c0392b;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.notice-strip marquee {
+  width: 85%;
+  color: #000;
+}
+
+.social-section {
+  padding: 60px 10%;
+  background: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.container-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.social-text h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #0f2239;
+  line-height: 1.4;
+}
+
+.social-text p {
+  font-size: 16px;
+  color: #555;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.social-text h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.social-text ul {
+  list-style-type: disc;
+  margin-left: 10px;
+  color: #222;
+  font-size: 16px;
+}
+
+.social-image img {
+  width: 360px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 16px rgba(0,0,0,0.12);
+}
+
+
+    
+  /* @media (max-width: 880px) {
+
+
+  .mobile-nav-toggle {
+    display: block; 
+  }
+} */
+
+
+    </style>
+
+    <meta name="google" content="notranslate">
+
+   
+</head>
+
+<body>
+
+     <div class="top-bar-first">
+    <div class="contact-info-one">
+      <span>📧  gpvijaynagar@gmail.com &nbsp;&nbsp; | &nbsp;&nbsp; 📞 +91 9764590053 </span>
+      
+      
+    </div>
+    <div class="login-translate">
+    <a href="admin-login.html" class="gp-login" target="_blank">🧑‍💼 ग्रामपंचायत लॉगिन</a>
+    <span class="separator">|</span>
+    <div id="google_translate_element"></div>
+    </div>
+  </div>
+
+    <header class="site-header-index" style="display: flex; align-items: center;justify-content: center;">
+      <div class="logo">
+         <img src="images/maharashtraLogo_1.png" alt="Maharashtra Shasan">
+      </div>
+      <div class="header">
+        <h1 class="GramName" data-aos="fade-down"><strong>ग्रामपंचायत विजयनगर (डहाळेवाडी)</strong></h1>
+        <p class="GramAddress" data-aos="fade-up"><strong>तालुका - त्र्यंबकेश्वर,  जिल्हा - नाशिक</strong> </p>
+      </div>
+
+    </header>
+
+    <nav class="navbar">
+        <div class="mobile-nav-toggle" aria-expanded="false">☰</div>
+        <ul id="main-nav">
+            <li class="active"><a href="#">🏠 मुख्यपृष्ठ</a></li>
+            <li><a href="about.html">ℹ️ आमच्याबद्दल</a></li>
+            <li><a href="organisation.html">👥 संघटना</a></li>
+            <li><a href="services.html">🤝 सेवा</a></li>
+            <li><a href="schemes.html">📍 योजना</a></li>
+            <li><a href="gallery.html">🖼️ गॅलरी</a></li>
+            <li><a href="contact.html">📞 संपर्क</a></li>
+            <!-- <li><a href="apply.html">अर्ज</a></li> -->
+            <li><a href="#complaint" data-bs-toggle="modal" data-bs-target="#complaintModal">📢 तक्रार</a></li>          
+        </ul>    
+      </nav>
+
+      <div id="noticeStrip" class="notice-strip">
+        <div class="notice-content">
+          <span>📢 ग्रामपंचायत सूचना:</span>
+          <marquee id="noticeMarquee" behavior="scroll" direction="left" scrollamount="5">
+            Notices -
+          </marquee>
+        </div>
+      </div>
+
+    <section class="welcome-section">
+        <div  data-aos="fade-right" class="left-box">
+            <h2 class="section-title">ग्रामपंचायत विजयनगर मध्ये आपला स्वागत आहे</h2>
+            <p class="section-para" style="text-align: justify;">
+                ग्रामपंचायत ही स्थानिक स्वराज्य संस्था आहे जिला राज्य शासनाकडून देण्यात 
+                आलेल्या अधिकारांवर गावाच्या पातळीवर स्थानिक विकास व सार्वजनिक सेवा राबविण्याची जबाबदारी असते. 
+                ग्रामपंचायतीत निवडून आलेले लोकप्रतिनिधी (पंच, सरपंच) व प्रशासनिक कर्मचारी मिळून गावाच्या रोजच्या समस्या सोडवतात. 
+                हे संस्थात्मक स्वरूप पाणीपुरवठा, स्वच्छता, सार्वजनिक आरोग्य, शिक्षण आणि स्थानिक पायाभूत सुविधा उभारणीसाठी महत्त्वाचे आहे. 
+                ग्रामपंचायत स्थानिक लोकांच्या सहभागामुळे निर्णय घेते आणि स्थानिक विकासाचे नियोजन व अंमलबजावणी करते..
+            </p>
+
+            <h3 class="section-title">लोकसंख्या</h3>
+          
+
+               <div class="team-grid" id="team">
+                   
+                    <div class="population-table">
+                        
+                            <div class="pop-col">
+                                <img src="https://cdn-icons-png.flaticon.com/128/1077/1077012.png" alt="Total">
+                                <div class="pop-label">एकूण लोकसंख्या</div>
+                                <div class="pop-value">954</div>
+                            </div>
+                       
+                    </div>
+                    <div class="population-table">
+                       
+                        <div class="pop-col">
+                            <img src="https://cdn-icons-png.flaticon.com/128/236/236831.png" alt="Male">
+                            <div class="pop-label">पुरुष</div>
+                            <div class="pop-value">518</div>
+                        </div>
+                       
+                    </div>
+                    <div class="population-table">
+                       
+                        <div class="pop-col">
+                            <img src="https://cdn-icons-png.flaticon.com/128/236/236832.png" alt="Female">
+                            <div class="pop-label">महिला</div>
+                            <div class="pop-value">436</div>
+                        </div>
+                       
+                    </div>
+                    <!-- <div class="population-table">
+                       
+                        <div class="pop-col">
+                            <img src="https://cdn-icons-png.flaticon.com/128/3135/3135768.png" alt="कुटुंब">
+                            <div class="pop-label">कुटुंब</div>
+                            <div class="pop-value">106</div>
+                        </div>
+                       
+                    </div> -->
+                    <div class="population-table">
+                       
+                        <div class="pop-col">
+                            <img src="https://cdn-icons-png.flaticon.com/128/432/432310.png" alt="व्यवसाय">
+                            <div class="pop-label">व्यवसाय</div>
+                            <div class="pop-value">शेती व मजुरी</div>
+                        </div>
+                       
+                    </div>
+                    <div class="population-table">
+                       
+                        <div class="pop-col">
+                            <img src="https://cdn-icons-png.flaticon.com/128/9922/9922321.png" alt="Crop Icon">
+                            <div class="pop-label">मुख्य पिक</div>
+                            <div class="pop-value">भात/नागली</div>
+                        </div>
+                       
+                    </div>
+                </div>
+           
+        </div>
+
+        <div  data-aos="fade-left" class="right-box">
+            <div id="slider1" class="slider">
+                <div class="slides">
+                    <img src="images/sabha1.jpeg" alt="Gram Panchayat 1">
+                    <img src="images/sabha2.jpeg" alt="Gram Panchayat 2">
+                    <img src="images/Website_Bg.jpg" alt="Gram Panchayat 3">
+                </div>
+                <button class="prev" onclick="slider1.moveSlide(-1)">❮</button>
+                <button class="next" onclick="slider1.moveSlide(1)">❯</button>
+            </div>
+           
+            <div class="dots">
+                <span class="dot" onclick="slider1.currentSlide(0)"></span>
+                <span class="dot" onclick="slider1.currentSlide(1)"></span>
+                <span class="dot" onclick="slider1.currentSlide(2)"></span>
+            </div>
+
+  <!-- title below dots -->
+            <div class="slider-title">ग्रामपंचायत भवन</div>
+
+        </div>
+    </section>
+
+
+
+
+     <section class="officials-section">
+    <h2  data-aos="fade-up" class="section-title-photo">ग्रामविकास विभाग, महाराष्ट्र शासन</h2>
+    <div data-aos="fade-up" class="officials-container">
+        <div class="official-card">
+        <img src="images/cm_maharashtra.webp" alt="श्री. देवेंद्र फडणवीस">
+        <h3>श्री. देवेंद्र फडणवीस</h3>
+        <p>माननीय मुख्यमंत्री महाराष्ट्र राज्य</p>
+        </div>
+        <div class="official-card">
+        <img src="images/dcm1_maharashtra.jpeg" alt="श्री. एकनाथ शिंदे">
+        <h3>श्री. एकनाथ शिंदे</h3>
+        <p>माननीय उपमुख्यमंत्री महाराष्ट्र राज्य</p>
+        </div>
+        <div class="official-card">
+        <img src="images/dcm2_maharashtra.jpg" alt="श्री. अजित पवार">
+        <h3>श्री. अजित पवार</h3>
+        <p>माननीय उपमुख्यमंत्री महाराष्ट्र राज्य</p>
+        </div>
+        <div class="official-card">
+        <img src="images/panchayatraj_mantri.jpg" alt="श्री. जयकुमार गोरे">
+        <h3>श्री. जयकुमार गोरे</h3>
+        <p>माननीय मंत्री, ग्रामविकास व पंचायतराज विभाग महाराष्ट्र राज्य</p>
+        </div>
+        <div class="official-card">
+        <img src="images/panchayatraj_upmantri.png" alt="श्री. योगेश कदम">
+        <h3>री. योगेश कदम</h3>
+        <p>माननीय राज्यमंत्री, ग्रामविकास व पंचायतराज विभाग महाराष्ट्र राज्य</p>
+        </div>
+        <div class="official-card">
+        <img src="images/Gramvikas_PradhanSachiv.png" alt="श्री. एकनाथ डावले">
+        <h3>श्री. एकनाथ डावले</h3>
+        <p>माननीय प्रधान सचिव, ग्रामविकास व पंचायतराज विभाग महाराष्ट्र राज्य</p>
+        </div>
+    </div>
+    </section>
+
+
+    <section class="officials-section">
+    <h2  data-aos="fade-up" class="section-title-photo">पदाधिकारी</h2>
+    <div data-aos="fade-up" class="officials-container">
+        <div class="official-card">
+        <img src="images/adminlogo.jpeg" alt="श्री. पी. जी. गावित">
+        <h3>श्री. पी. जी. गावित</h3>
+        <p>ग्रामपंचायत अधिकारी</p>
+        </div>
+        <div class="official-card">
+        <img src="images/adminlogo.jpeg" alt="श्री. ईश्वर शशिकांत भाडकोळी">
+        <h3>श्री. ईश्वर शशिकांत भाडकोळी</h3>
+        <p>उपसरपंच</p>
+        </div>
+    </div>
+    </section>
+
+    <section class="social-section">
+      <div class="container-social">
+        
+        <!-- Left Content -->
+        <div class="social-text"  data-aos="fade-right">
+          <h2>📱 विजयनगर ग्रामपंचायत <br> आता सोशल मीडियावर!</h2>
+
+          <p>
+            ग्रामपंचायतीचे सर्व उपक्रम, शासकीय योजना,
+          </p>
+          <p>विकासकामे आणि विविध कार्यक्रमांबद्दलची माहिती</p>
+          <p>आता थेट सोशल मीडियावर उपलब्ध आहे.
+          </p>
+          </div>
+          <div  data-aos="fade-up">
+
+          <h3>Follow करा आमच्या अधिकृत अकाउंट्स:</h3>
+          <ul>
+            <li><strong>Instagram:</strong> @vijaynagar_grampanchayat</li>
+            <li><strong>Facebook:</strong> Vijay Nagar Grampanchayat</li>
+          </ul>
+        </div>
+
+        <!-- Right Image -->
+        <div class="social-image"  data-aos="fade-left">
+          <img src="images/social_media_img1.jpg" alt="Follow Us">
+        </div>
+
+      </div>
+    </section>
+
+
+
+      
+    <div class="modal fade" id="complaintModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Header -->
+        <div class="modal-header">
+          <h5 class="modal-title">तक्रार / सूचना</h5>
+        </div>
+
+        <!-- Body -->
+        <div class="modal-body">
+          <form id="complaintForm">
+            <div class="mb-3">
+              <label class="form-label" >नाव :</label>
+              <input type="text" class="form-control" id="complainterName" placeholder="आपले पूर्ण नाव भरा" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">मोबाईल नंबर :</label>
+              <input type="number" class="form-control" id="complainterNumber" placeholder="आपला मोबाईल नंबर भरा" required>
+            </div>
+
+
+            <div class="mb-3">
+              <label class="form-label">तक्रार / सूचना निवडा :</label>
+              <select class="form-control" id="reasonDropdown">
+                <option value="" required>-- निवडा --</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">वर्णन :</label>
+              <textarea class="form-control" id="comlaintDesc" rows="3" placeholder="समस्या तपशीलवार लिहा" required></textarea>
+            </div>
+          </form>
+        </div>
+
+        <!-- Footer -->
+        <div class="modal-footer">
+          <button class="btn btn-primary" type="submit" form="complaintForm">Send</button>
+          <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+     <!-- <section class="welcome-section"> -->
+     <div id="logos"> 
+        <div data-aos="fade-up" class="govtlogos">
+          <img class="govlogo" src="images/apleSarkar.png" alt="Aple Sarkar">        
+          <img class="govlogo" src="images/atalBujal.png" alt="Atal Bhujal">
+          <img class="govlogo" src="images/digitalIndia.png" alt="Digital India">
+          <img class="govlogo" src="images/g20.png" alt="G 20">
+          <img class="govlogo" src="images/gramVikas.png" alt="Gram Vikas">
+          <img class="govlogo" src="images/mahaShasan.png" alt="Maha shasan">
+          <img class="govlogo" src="images/panchayat.png" alt="Panchayat Raj">
+          <img class="govlogo" src="images/vasundhara.png" alt="Vasundhara">        
+          <img class="govlogo" src="images/panchayat.png" alt="Panchayat">
+          <img class="govlogo" src="images/satyamevaJayate.png" alt="Satyameva Jayate">
+          <img class="govlogo" src="images/jalayuktaShivar.png" alt="Jalyukta Shivar">
+        </div>
+      </div>
+      <!-- </section> -->
+
+    <section class="footer-info">
+  <div class="footer-container">
+
+    <!-- Column 1 -->
+    <div class="footer-col">
+      <h3>महत्वाच्या लिंक</h3>
+      <ul>
+        <li> <a href="https://gr.maharashtra.gov.in/1145/Government-Resolutions" target="_blank" rel="noopener noreferrer">थाशन निर्णय</a></li>
+        <li><a href="https://zpnashik.maharashtra.gov.in/" target="_blank" rel="noopener noreferrer">नाशिक जिल्हा परिषद</a></li>
+        <li><a href="https://maharashtra.gov.in/" target="_blank" rel="noopener noreferrer">महाराष्ट्र शासन</a></li>
+        <li><a href="https://www.mahaonline.gov.in/" target="_blank" rel="noopener noreferrer">महा ऑनलाइन</a></li>
+        <li><a href="https://nashik.gov.in/en/services/rti/" target="_blank" rel="noopener noreferrer">माहिती अधिकार</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 2 -->
+    <div class="footer-col">
+      <h3>महत्वाच्या लिंक</h3>
+      <ul>
+        <li><a href="https://ceoelection.maharashtra.gov.in/ceo/" target="_blank" rel="noopener noreferrer">मतदार यादीत नाव शोधण्यासाठी</a></li>
+        <li><a href="https://mahadbtmahait.gov.in/Farmer/AgriLogin/AgriLogin" target="_blank" rel="noopener noreferrer">कृषी विभाग महाडीबीटी</a></li>
+        <li><a href="https://bhulekh.mahabhumi.gov.in/" target="_blank" rel="noopener noreferrer">7/12 उतारा</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="footer-col">
+      <h3>सोशल मीडिया</h3>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://x.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <!-- Column 4 -->
+    <div class="footer-col">
+      <h3>पत्ता</h3>
+      <p>मु. पो. विजयनगर (डहाळेवाडी), तालुका: त्र्यंबकेश्वर, जिल्हा: नाशिक <br>पिन : 422212</p>
+      <a href="https://www.google.co.in/maps/dir//VCRV%2B88G+Dahalewadi+(Vijaynagar),+Dahalewadi+N.V.,+Take+Harsha,+Maharashtra+422212/@19.8908266,73.424273,15z/data=!4m17!1m8!3m7!1s0x3be761004ac11359:0xb861e0a360240c4a!2sDahalewadi+(Vijaynagar)!8m2!3d19.8908266!4d73.4433274!15sCh5kYWhhbGV3YWRpICB2aWpheW5hZ2FyIHRyaW1iYWtaHyIdZGFoYWxld2FkaSB2aWpheW5hZ2FyIHRyaW1iYWuSAQ9ob3VzaW5nX3NvY2lldHmaASRDaGREU1VoTk1HOW5TMFZKUTBGblRVUlJNVWxmUzNkM1JSQUKqAUYQATIfEAEiG3dENLbswzbp_h-ORd4Elh7o2O8AcdGSCOQwGjIhEAIiHWRhaGFsZXdhZGkgdmlqYXluYWdhciB0cmltYmFr4AEA-gEECAAQEw!16s%2Fg%2F11x1446y5y!4m7!1m0!1m5!1m1!1s0x3be761004ac11359:0xb861e0a360240c4a!2m2!1d73.4433274!2d19.8908269?hl=en&entry=ttu&g_ep=EgoyMDI1MTEwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank"><p><strong>GET DIRECTIONS</strong></p></a>
+     
+      <p>मोबाईल : +91 9764590053</p>
+      <p><strong>238131</strong></p>
+    </div>
+
+  </div>
+</section>
+    
+     <footer>
+    <div class="wrap f-wrap">
+      <div style="display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap">
+        <div style="font-weight:700">© <span id="year"></span> Gram Panchayat</div>
+        <div class="light">All rights reserved</div>
+      </div>
+      <small class="light"> Developed By SmartTech Services | +91 8484836988  - Designed with care • Responsive • Bilingual</small>
+    </div>
+  </footer>
+
+
+<script src="utils.js"></script>
+<script src="config.js"></script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.querySelector('.mobile-nav-toggle');
+  const menu = document.querySelector('nav ul#main-nav');
+  const menuLinks = document.querySelectorAll('nav ul#main-nav li a');
+
+  // Guard: if elements are missing (e.g. different page), exit gracefully
+  if (!toggle || !menu) return;
+
+  // Toggle menu on hamburger click
+  toggle.addEventListener('click', () => {
+    const isOpen = menu.classList.toggle('show');       // add/remove .show
+    toggle.setAttribute('aria-expanded', isOpen);       // accessibility
+    // Optional: change icon from ☰ to ✖
+    toggle.textContent = isOpen ? '✖' : '☰';
+  });
+
+  // Close menu when any link clicked (for SPA behaviour or anchor links)
+  if (menuLinks.length) {
+    menuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.remove('show');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.textContent = '☰';
+      });
+    });
+  }
+
+
+
+
+
+  // Optional: close menu if user taps/clicks outside the nav when open
+  document.addEventListener('click', (e) => {
+    if (!menu.classList.contains('show')) return;
+    if (!e.target.closest('nav')) {
+      menu.classList.remove('show');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.textContent = '☰';
+    }
+  });
+
+  // Optional: allow keyboard toggle via Enter/Space when focused
+  toggle.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      toggle.click();
+    }
+  });
+});
+
+
+
+
+//--------------------------------------------population Counter effect--------------------------------------
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const counters = document.querySelectorAll(".pop-value");
+  let started = false;
+
+  function animateCounters() {
+    if (started) return;
+    const section = document.querySelector("#team");
+    const rect = section.getBoundingClientRect();
+    const inView = rect.top < window.innerHeight && rect.bottom > 0;
+
+    if (inView) {
+      started = true;
+      counters.forEach(counter => {
+        const finalValue = counter.textContent.trim();
+
+        if (!isNaN(finalValue) && finalValue !== "") {
+          let start = 0;
+          const end = parseInt(finalValue);
+          const duration = 2000;
+          const increment = end / (duration / 50);
+
+          counter.textContent = "0";
+
+          const interval = setInterval(() => {
+            start += increment;
+            if (start >= end) {
+              start = end;
+              clearInterval(interval);
+            }
+            counter.textContent = Math.floor(start);
+          }, 50);
+        }
+      });
+    }
+  }
+
+  window.addEventListener("scroll", animateCounters);
+  animateCounters(); // trigger if already visible
+});
+
+
+ AOS.init({
+        duration: 1000,   // Animation duration (ms)
+        once: true        // Run animation only once
+    });
+
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'mr', // or 'mr' if your original site is in Marathi
+      includedLanguages: 'en,hi,mr', // ✅ Add 'mr' for Marathi
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+
+
+</script>       
+</body>
+</html>

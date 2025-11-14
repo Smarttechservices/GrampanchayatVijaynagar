@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" href="images/GramLogo.png" type="image/x-icon">
+    <title>ग्रामपंचायत विजयनगर</title>
+   
+  <!--Bootstrap -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">  
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Google Font -->
+     <meta name="google" content="notranslate">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Icons (FontAwesome or similar) -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lightbox.css">
+<style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f0f0f0;
+            /* padding: 30px; */
+        }
+
+        .population-card {
+            width: 400px;
+            background-color: #fff;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+            .population-card h2 {
+                font-size: 18px;
+                color: #003366;
+                margin-bottom: 10px;
+                position: relative;
+                display: inline-block;
+                border-bottom: 3px solid orange;
+            }
+
+        .population-table {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            width: 150px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;  /* hover केल्यावर pointer दिसेल */
+        }
+
+        /* hover झाल्यावर bubble effect */
+        .population-table:hover {
+            transform: scale(1.1);  /* थोडा मोठा होईल */
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2); /* shadow वाढेल */
+        }
+
+        .pop-col {
+            flex: 1;
+        }
+
+            .pop-col:not(:last-child) {
+                border-right: 1px solid #ddd;
+            }
+
+            .pop-col img {
+                width: 36px;
+                height: 36px;
+                margin-bottom: 6px;
+            }
+
+        .pop-label {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #222;
+        }
+
+        .pop-value {
+            font-size: 20px; /* Increase size */
+            font-weight: bold; /* Make bold */
+            color: #000; /* Darker color for better contrast (optional) */
+            margin-top: 5px;
+        }
+        .goog-te-combo {
+      font-size: 16px !important;
+      font-weight: bold !important;
+      padding: 6px;
+    }
+
+    .section-container{
+    text-align:center;
+    padding:10px 0px;
+    margin: 0px 0px;
+    background:#fde9e2;   /* full width background color */
+    width:100%;
+    }
+
+    .sectionHead
+    {
+      margin-top: 18px;
+    }
+      .info-card-img {
+      background-color: white;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      padding: 30px 40px;
+      border-radius: 12px;
+      max-width: 1400px;
+      width: 100%;
+      text-align: center;
+
+      align-items: center;
+      justify-content: center;
+
+      background-position: center;
+    }
+
+    .center
+    {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      margin-bottom: 20px;
+    }
+
+    .card
+    {
+      width: 58rem; height: 820px;
+    }
+
+    .card.extra
+  {
+      width: 58rem; height: 900px;
+  } 
+
+    @media (max-width: 576px) {
+
+  .card-img-top {
+    width: 100%;
+    height: auto;
+  }
+
+  .card{
+    height: 920px;
+  }
+
+   /* .container-fluid .card:nth-child(3)
+  {
+    height: 1100px;
+  } */
+
+  
+    .card.extra
+  {
+    height: 1100px;
+  } 
+}
+    
+    </style>
+
+    <meta name="google" content="notranslate">
+    <script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'mr', // or 'mr' if your original site is in Marathi
+      includedLanguages: 'en,hi,mr', // ✅ Add 'mr' for Marathi
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+   
+</head>
+
+<body>
+
+      <div class="top-bar-first">
+    <div class="contact-info-one">
+      <span>📧 gpvijaynagar@gmail.com  &nbsp;&nbsp; | &nbsp;&nbsp; 📞 +91 9764590053</span>
+      
+      
+    </div>
+    <div class="login-translate">
+     <a href="admin-login.html" class="gp-login" target="_blank">🧑‍💼 ग्रामपंचायत लॉगिन</a>
+    <span class="separator">|</span>
+    <div id="google_translate_element"></div>
+    </div>
+  </div>
+
+    <!-- <header class="site-header">
+      <div class="logo">
+         <img src="images/maharashtraLogo_1.png" alt="Maharashtra Shasan">
+      </div>
+        <h1 data-aos="fade-down"><strong>ग्रामपंचायत महादेवनगर</strong></h1>
+        <p data-aos="fade-up"><strong>तालुक- त्र्यंबकेश्वर,  जिल्हा - नाशिक</strong> </p>
+    </header> -->
+    <header class="site-header" style="display: flex; align-items: center;justify-content: center;">
+      <div class="logo">
+         <img src="images/maharashtraLogo_1.png" style="height: 150px; width: 150px; margin-right: 25px;" alt="Maharashtra Shasan">
+      </div>
+      <div class="header">
+         <h1 data-aos="fade-down"><strong>ग्रामपंचायत विजयनगर (डहाळेवाडी)</strong></h1>
+        <p data-aos="fade-up"><strong>तालुका- त्र्यंबकेश्वर,  जिल्हा - नाशिक</strong> </p>
+      </div>
+
+    </header>
+
+    <nav class="navbar">
+         <div class="mobile-nav-toggle" aria-expanded="false">☰</div>
+
+        <ul id="main-nav">
+            <li><a href="index.html">🏠 मुख्यपृष्ठ</a></li>
+            <li class="active"><a href="#">ℹ️ आमच्याबद्दल</a></li>
+            <li><a href="organisation.html">👥 संघटना</a></li>
+            <li><a href="services.html">🤝 सेवा</a></li>
+            <li><a href="schemes.html">📍 योजना</a></li>
+            <li><a href="gallery.html">🖼️ गॅलरी</a></li>
+            <li><a href="contact.html">📞 संपर्क</a></li>
+             <li><a href="#complaint" data-bs-toggle="modal" data-bs-target="#complaintModal">📢 तक्रार</a></li>  
+            
+        </ul>
+
+       
+    </nav>
+
+    <section class="welcome-section-about">
+        <div data-aos="fade-right" class="info-card">
+            <h2 class="section-title-about">ग्रामपंचायत विजयनगर बद्दल माहिती</h2>
+            <p>
+             ग्रामपंचायत विजयनगर (डहाळेवाडी) ही त्र्यंबकेश्वर तालुका, जिल्हा नाशिक येथे स्थित आहे. हे गाव नाशिक शहरापासून अंदाजे ३५ किमी अंतरावर आहे. गाव निसर्गरम्य परिसरात वसलेले असून शेती हा येथील प्रमुख व्यवसाय आहे. ग्रामपंचायत कार्यालय हे सर्व सुविधांनी सुसज्ज, अद्ययावत आणि संगणकीकृत पद्धतीने कार्यरत आहे. गावात पिण्याचे पाणी, स्वच्छता, रस्ते, प्रकाश व्यवस्था, शिक्षण आणि आरोग्य यांसारख्या सर्व मूलभूत सुविधा उपलब्ध आहेत. स्थानिक विकासकामे नियमितपणे राबवली जात असून डाहळेवाडी हे एक प्रगतिशील आणि सुशिक्षित गाव म्हणून ओळखले जाते.
+            </p>
+
+            
+                
+           
+        </div>
+
+        
+    </section>
+
+
+    <section >
+
+    <div class="section-container">
+          <h2 class="sectionHead" data-aos="fade-up"><strong>🏘️ गावातील शिक्षण संस्था 📚</strong></h2>
+        </div>
+        <div class="center">
+        <div class="info-card-img">
+          
+        <div class="songirwallpaper" >
+
+        </div>
+
+        <div class="container-fluid" style="display: flex; align-items: center; justify-content: space-evenly; flex-wrap: wrap;margin: 10px 0px;">
+            <div class="card" data-aos="fade-right">
+              <img src="images/madyamik_shala.png" style="height:450px" class="card-img-top" alt="Ashram Shala">
+              <div class="card-body">
+                <h4 class="card-title"><img src="images/school_logo.png" alt="School Icon" 
+                         style="width:40px; height:auto; margin-right:8px; vertical-align:middle;">
+                        <strong>प्राथमिक जिल्हा परिषद शाळा</strong></h4>
+                <p class="card-text">प्राथमिक जिल्हा परिषद शाळा विजयनगर(डहाळेवाडी), जिल्हा नाशिक ही गावातील मुलांसाठी दर्जेदार प्राथमिक शिक्षण देणारी सरकारी शाळा आहे. शाळेत इयत्ता १ ते ५ पर्यंतचे शिक्षण उपलब्ध असून सर्व विद्यार्थ्यांना मोफत पाठ्यपुस्तके, पोषण आहार (मिड-डे मील) आणि शैक्षणिक सुविधा दिल्या जातात. शाळेमध्ये स्वच्छ वर्गखोली, खेळाची मैदाने, शैक्षणिक उपक्रम आणि विविध सांस्कृतिक कार्यक्रमांद्वारे विद्यार्थ्यांच्या सर्वांगीण विकासावर भर दिला जातो. शिक्षणाचा दर्जा सुधारण्यासाठी शिक्षकवर्ग नियमित प्रशिक्षण घेत असून मुलांच्या उपस्थिती व प्रगतीवर विशेष लक्ष दिले जाते.</p>
+                <table class="table table-bordered table-striped" style="margin-top: 15px;">
+                  <thead style="background-color: aquamarine;">
+                    <tr>
+                      <th colspan="3" style="font-size: large;">
+                        <img src="images/student_count.png" alt="School Icon" 
+                         style="width:40px; height:auto; margin-right:8px; vertical-align:middle;"><strong>विद्यार्थी पटसंख्या</strong></th>
+                    </tr>
+                  </thead>
+                  <thead>
+                    <tr>
+                      <th>👧🏻 मुली</th>
+                      <th>👦🏻 मुले</th>
+                      <th>📊 एकूण विद्यार्थी</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                        <td>23</td>
+                        <td>26</td>
+                        <td>49</td>
+                      </tr>
+                  </tbody>
+                </table>
+                <p class="card-text" style="font-size: large;"><strong>श्री. भानुदास कचरू चव्हाण (मुख्याध्यापक)</strong></p>
+                <!-- <a href="#" class="btn btn-primary mt-3"  data-bs-toggle="modal" data-bs-target="#songirFortModal">More</a> -->
+              </div>
+            </div>
+
+            
+            <div class="card" data-aos="fade-left" style="margin-top: 20px;">
+              <img src="images/madyamik_shala_1.png" style="height:450px" class="card-img-top" alt="Madhyamik School">
+              <div class="card-body">
+                <h4 class="card-title"><img src="images/school_logo.png" alt="School Icon" 
+                         style="width:40px; height:auto; margin-right:8px; vertical-align:middle;"><strong>माध्यमिक आश्रमशाळा</strong></h4>
+                <p class="card-text">माध्यमिक आश्रम शाळा विजयनगर(डहाळेवाडी), नाशिक ही आदिवासी विद्यार्थ्यांसाठी कार्यरत असलेली निवासी शाळा आहे. येथे इयत्ता ६ वी ते १० वी पर्यंतचे शिक्षण दिले जाते. विद्यार्थ्यांना निवास, भोजन, पोशाख, पाठ्यपुस्तके आणि शिकवणी या सर्व सुविधा शासनाकडून उपलब्ध करून दिल्या जातात. शाळेमध्ये शैक्षणिक शिक्षणासोबतच क्रीडा, संस्कृती, संगणक आणि विविध कौशल्यविकास उपक्रमांवरही विशेष भर दिला जातो. सुरक्षित परिसर, प्रशिक्षित शिक्षकवर्ग आणि मूलभूत सुविधा यांमुळे आश्रम शाळा डाहळेवाडी परिसरातील विद्यार्थ्यांच्या सर्वांगीण विकासासाठी महत्त्वाची भूमिका बजावते.</p>
+                 <table class="table table-bordered table-striped" style="margin-top: 15px;">
+                  <thead style="background-color: aquamarine;">
+                    <tr>
+                      <th colspan="3" style="font-size: large;"><img src="images/student_count.png" alt="School Icon" 
+                         style="width:40px; height:auto; margin-right:8px; vertical-align:middle;"><strong>विद्यार्थी पटसंख्या</strong></th>
+                    </tr>
+                  </thead>
+                  <thead>
+                    <tr>
+                     <th>👧🏻 मुली</th>
+                      <th>👦🏻 मुले</th>
+                      <th>📊 एकूण विद्यार्थी</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                        <td>272</td>
+                        <td>367</td>
+                        <td>609</td>
+                      </tr>
+                  </tbody>
+                </table>
+               <!-- <p class="card-text" style="font-size: large;"><strong>श्री. भानुदास कचरू चव्हाण (मुख्याध्यापक)</strong></p> -->
+                <!-- <a href="#" class="btn btn-primary mt-3"  data-bs-toggle="modal" data-bs-target="#songirVillageModal">More</a> -->
+              </div>
+            </div>
+
+
+            <div class="card extra" data-aos="fade-right" style="margin-top: 20px;">
+              <img src="images/anganwadi.jpg" style="height:450px" class="card-img-top" alt="Anganwadi Image">
+              <div class="card-body">
+                <h4 class="card-title"><img src="images/school_logo.png" alt="School Icon" 
+                         style="width:40px; height:auto; margin-right:8px; vertical-align:middle;"><strong>अंगणवाडी</strong></h4>
+                <p class="card-text">आंगणवाडी हा लहान बालकांच्या पोषण, शिक्षण आणि आरोग्यसुरक्षेसाठी चालवला जाणारा एक महत्त्वाचा उपक्रम आहे. येथे ३ ते ६ वयोगटातील मुलांना प्री-स्कूल शिक्षण दिले जाते. तसेच गर्भवती आणि स्तनदा मातांसाठी पोषणविषयक मार्गदर्शन आणि पूरक आहाराची सुविधाही उपलब्ध असते.
+
+                            आंगणवाडी केंद्रात मुलांच्या- 
+
+                            पोषण आहार,
+
+                            लसीकरण,
+
+                            नियमित आरोग्य तपासणी,
+
+                            खेळाच्या माध्यमातून शिकवण,
+
+                            स्वच्छता आणि आरोग्यविषयक सवयी
+
+                            या सर्वांवर विशेष भर दिला जातो.
+
+                      प्रशिक्षित आंगणवाडी सेविका आणि मदतनीस यांच्या मार्फत मुलांचा सर्वांगीण शारीरिक, मानसिक आणि सामाजिक विकास घडविण्यासाठी प्रयत्न केले जातात. सुरक्षित वातावरण, पोषक आहार आणि मूलभूत शिक्षण यामुळे आंगणवाडी ग्रामीण भागातील बालविकासासाठी एक महत्त्वाचे केंद्र म्हणून कार्य करते.</p>
+                 <table class="table table-bordered table-striped" style="margin-top: 15px;">
+                  <thead style="background-color: aquamarine;">
+                    <tr>
+                      <th colspan="3" style="font-size: large;"><img src="images/student_count.png" alt="School Icon" 
+                         style="width:40px; height:auto; margin-right:8px; vertical-align:middle;"><strong>विद्यार्थी पटसंख्या</strong></th>
+                    </tr>
+                  </thead>
+                  <thead>
+                    <tr>
+                     <th>👧🏻 मुली</th>
+                      <th>👦🏻 मुले</th>
+                      <th>📊 एकूण विद्यार्थी</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                        <td>33</td>
+                        <td>34</td>
+                        <td>67</td>
+                      </tr>
+                  </tbody>
+                </table>
+               <p class="card-text" style="font-size: large;"><strong>सौ. सुमन राजाराम कानडे (आगणवाडी सेविका) - 7498996391</strong></p>
+               <p class="card-text" style="font-size: large;"><strong>सौ. अल्का गोविंद लहामटे  (आगणवाडी मदतनीस) - 9022631905</strong></p>
+               <p class="card-text" style="font-size: large;"><strong>सौ. उष्मा आहीरे (आरोग्य सेवक) - 7745060940</strong></p>
+                <!-- <a href="#" class="btn btn-primary mt-3"  data-bs-toggle="modal" data-bs-target="#songirVillageModal">More</a> -->
+              </div>
+            </div>
+        
+
+        </div>
+        </div>
+      </div>  
+
+    </section>
+
+    
+    
+    
+      
+    <div class="modal fade" id="complaintModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Header -->
+        <div class="modal-header">
+          <h5 class="modal-title">तक्रार / सूचना</h5>
+        </div>
+
+        <!-- Body -->
+        <div class="modal-body">
+          <form id="complaintForm">
+            <div class="mb-3">
+              <label class="form-label" >नाव :</label>
+              <input type="text" class="form-control" id="complainterName" placeholder="आपले पूर्ण नाव भरा" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">मोबाईल नंबर :</label>
+              <input type="number" class="form-control" id="complainterNumber" placeholder="आपला मोबाईल नंबर भरा" required>
+            </div>
+
+            <!-- <div class="mb-3">
+              <label class="form-label required">तक्रार / सूचना प्रकार :</label>
+              <select class="form-control" id="reasonDropdown">
+                <option value="">-- निवडा --</option>
+                <option value="complaint">पाणी प्रश्न</option>
+                <option value="suggestion">स्वच्छता</option>
+                <option value="complaint">गटार चेंबर</option>
+                <option value="suggestion">रस्ते वाहतूक</option>
+                <option value="complaint">पथ दिवे</option>
+                <option value="suggestion">घंटा गाडी</option>
+                <option value="complaint">इतर</option>
+                
+              </select>
+            </div> -->
+
+            <div class="mb-3">
+              <label class="form-label">तक्रार / सूचना निवडा :</label>
+              <select class="form-control" id="reasonDropdown">
+                <option value="" required>-- निवडा --</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">वर्णन :</label>
+              <textarea class="form-control" id="comlaintDesc" rows="3" placeholder="समस्या तपशीलवार लिहा" required></textarea>
+            </div>
+          </form>
+        </div>
+
+        <!-- Footer -->
+        <div class="modal-footer">
+          <button class="btn btn-primary" type="submit" form="complaintForm">Send</button>
+          <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  
+
+
+        <div id="logos"> 
+        <div data-aos="fade-up" class="govtlogos">
+          <img class="govlogo" src="images/apleSarkar.png" alt="Aple Sarkar">        
+          <img class="govlogo" src="images/atalBujal.png" alt="Atal Bhujal">
+          <img class="govlogo" src="images/digitalIndia.png" alt="Digital India">
+          <img class="govlogo" src="images/g20.png" alt="G 20">
+          <img class="govlogo" src="images/gramVikas.png" alt="Gram Vikas">
+          <img class="govlogo" src="images/mahaShasan.png" alt="Maha shasan">
+          <img class="govlogo" src="images/panchayat.png" alt="Panchayat Raj">
+          <img class="govlogo" src="images/vasundhara.png" alt="Vasundhara">        
+          <img class="govlogo" src="images/panchayat.png" alt="Panchayat">
+          <img class="govlogo" src="images/satyamevaJayate.png" alt="Satyameva Jayate">
+          <img class="govlogo" src="images/jalayuktaShivar.png" alt="Jalyukta Shivar">
+        </div>
+      </div>
+      <!-- </section> -->
+
+    <section class="footer-info">
+  <div class="footer-container">
+
+    <!-- Column 1 -->
+    <div class="footer-col">
+      <h3>महत्वाच्या लिंक</h3>
+      <ul>
+        <li> <a href="https://gr.maharashtra.gov.in/1145/Government-Resolutions" target="_blank" rel="noopener noreferrer">थाशन निर्णय</a></li>
+        <li><a href="https://zpnashik.maharashtra.gov.in/" target="_blank" rel="noopener noreferrer">नाशिक जिल्हा परिषद</a></li>
+        <li><a href="https://maharashtra.gov.in/" target="_blank" rel="noopener noreferrer">महाराष्ट्र शासन</a></li>
+        <li><a href="https://www.mahaonline.gov.in/" target="_blank" rel="noopener noreferrer">महा ऑनलाइन</a></li>
+        <li><a href="https://nashik.gov.in/en/services/rti/" target="_blank" rel="noopener noreferrer">माहिती अधिकार</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 2 -->
+    <div class="footer-col">
+      <h3>महत्वाच्या लिंक</h3>
+      <ul>
+        <li><a href="https://ceoelection.maharashtra.gov.in/ceo/" target="_blank" rel="noopener noreferrer">मतदार यादीत नाव शोधण्यासाठी</a></li>
+        <li><a href="https://mahadbtmahait.gov.in/Farmer/AgriLogin/AgriLogin" target="_blank" rel="noopener noreferrer">कृषी विभाग महाडीबीटी</a></li>
+        <li><a href="https://bhulekh.mahabhumi.gov.in/" target="_blank" rel="noopener noreferrer">7/12 उतारा</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="footer-col">
+      <h3>सोशल मीडिया</h3>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://x.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <!-- Column 4 -->
+    <div class="footer-col">
+      <h3>पत्ता</h3>
+      <p>मु. पो. विजयनगर (डहाळेवाडी), तालुका: त्र्यंबकेश्वर, जिल्हा: नाशिक <br>पिन : 422003</p>
+      <a href="https://www.google.com/maps/dir//Mahadeo+Nagar,+Maharashtra/@20.0932841,73.5176019,4395m/data=!3m1!1e3!4m17!1m8!3m7!1s0x3bddf76ca1fcae59:0x95e32e883b8002c4!2sMahadeo+Nagar,+Maharashtra!3b1!8m2!3d20.0948341!4d73.5270189!16s%2Fg%2F12hlf7r_p!4m7!1m0!1m5!1m1!1s0x3bddf76ca1fcae59:0x95e32e883b8002c4!2m2!1d73.5270189!2d20.0948341?entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQAw%3D%3D" target="_blank"><p><strong>GET DIRECTIONS</strong></p></a>
+     
+      <p>मोबाईल : +91 9764590053</p>
+      <p><strong>238131</strong></p>
+    </div>
+
+  </div>
+</section>
+
+
+
+     <footer>
+    <div class="wrap f-wrap">
+      <div style="display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap">
+        <div style="font-weight:700">© <span id="year"></span> Gram Panchayat</div>
+        <div class="light">All rights reserved</div>
+      </div>
+      <small class="light"> Developed By SmartTech Services | +91 8484836988  - Designed with care • Responsive • Bilingual</small>
+    </div>
+  </footer>
+
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.querySelector('.mobile-nav-toggle');
+  const menu = document.querySelector('nav ul#main-nav');
+  const menuLinks = document.querySelectorAll('nav ul#main-nav li a');
+
+  // Guard: if elements are missing (e.g. different page), exit gracefully
+  if (!toggle || !menu) return;
+
+  // Toggle menu on hamburger click
+  toggle.addEventListener('click', () => {
+    const isOpen = menu.classList.toggle('show');       // add/remove .show
+    toggle.setAttribute('aria-expanded', isOpen);       // accessibility
+    // Optional: change icon from ☰ to ✖
+    toggle.textContent = isOpen ? '✖' : '☰';
+  });
+
+  // Close menu when any link clicked (for SPA behaviour or anchor links)
+  if (menuLinks.length) {
+    menuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.remove('show');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.textContent = '☰';
+      });
+    });
+  }
+
+
+
+
+
+  // Optional: close menu if user taps/clicks outside the nav when open
+  document.addEventListener('click', (e) => {
+    if (!menu.classList.contains('show')) return;
+    if (!e.target.closest('nav')) {
+      menu.classList.remove('show');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.textContent = '☰';
+    }
+  });
+
+  // Optional: allow keyboard toggle via Enter/Space when focused
+  toggle.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      toggle.click();
+    }
+  });
+});
+</script>
+
+   
+    <script>
+    AOS.init({
+        duration: 1000,   // Animation duration (ms)
+        once: true        // Run animation only once
+    });
+    </script>
+</body>
+</html>
